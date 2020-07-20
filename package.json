@@ -1,0 +1,39 @@
+{
+  "private": "false",
+  "name": "vue-test-btn",
+  "version": "1.0.0",
+  "description": "Vue npm button test",
+  "main": "./dist/index.js",
+  "scripts": {
+    "dev": "vue serve src/StyledButton.vue",
+    "build": "rimraf ./dist && webpack --config ./webpack.config.js",
+    "serve": "vue-cli-service serve",
+   "build:k": "vue-cli-service build --target lib --name vue-example-pkg src/main.js"
+  },
+  "files": [
+    "dist/*",
+    "src/*"
+  ],
+  "author": "martins obayomi",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.10.5",
+    "@babel/core": "^7.10.5",
+    "@babel/plugin-transform-runtime": "^7.10.5",
+    "@babel/preset-env": "^7.10.4",
+    "@babel/runtime": "^7.10.5",
+    "babel-loader": "^8.1.0",
+    "path": "^0.12.7",
+    "rimraf": "^3.0.2",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "vue": "^2.6.11",
+    "vue-html-loader": "^1.2.4",
+    "vue-loader": "^15.9.3",
+    "vue-style-loader": "^4.1.2",
+    "vue-template-compiler": "^2.6.11",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12",
+    "webpack-merge": "^5.0.9"
+  },
+  "dependencies": {}
+}
